@@ -7,10 +7,12 @@ targetCompatibility=1.5
 
 repositories {
     maven { url "http://repo.springsource.org/libs-release" }
+    mavenCentral()
 }
 
 dependencies {
     compile "org.springframework:spring-webmvc:3.1.1.RELEASE"
     compile fileTree(dir: 'lib', include: '*.jar')
+    runtime "jstl:jstl:1.2"
 }
 

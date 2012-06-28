@@ -24,7 +24,7 @@
          </interceptors>
 
         <!-- Maps view names to JSP templates in /WEB-INF/views -->
-        <beans:bean class="org.springframework.mobile.device.web.servlet.view.DeviceAwareViewResolver">
+        <beans:bean class="org.springframework.mobile.device.view.DeviceAwareViewResolver">
         	<beans:property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView" />
             <beans:property name="prefix" value="/WEB-INF/views/" />        
             <beans:property name="suffix" value=".jsp" />
